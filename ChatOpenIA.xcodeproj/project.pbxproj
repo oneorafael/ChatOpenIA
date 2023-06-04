@@ -10,9 +10,9 @@
 		27FDDFF52A2D5ACA00DA5B06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDDFF42A2D5ACA00DA5B06 /* AppDelegate.swift */; };
 		27FDDFF72A2D5ACA00DA5B06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDDFF62A2D5ACA00DA5B06 /* SceneDelegate.swift */; };
 		27FDDFF92A2D5ACA00DA5B06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDDFF82A2D5ACA00DA5B06 /* ViewController.swift */; };
-		27FDDFFC2A2D5ACA00DA5B06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FDDFFA2A2D5ACA00DA5B06 /* Main.storyboard */; };
 		27FDDFFE2A2D5AD400DA5B06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FDDFFD2A2D5AD400DA5B06 /* Assets.xcassets */; };
 		27FDE0012A2D5AD400DA5B06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FDDFFF2A2D5AD400DA5B06 /* LaunchScreen.storyboard */; };
+		27FDE0092A2D5BD600DA5B06 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 27FDE0082A2D5BD600DA5B06 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		27FDDFF42A2D5ACA00DA5B06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27FDDFF62A2D5ACA00DA5B06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		27FDDFF82A2D5ACA00DA5B06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		27FDDFFB2A2D5ACA00DA5B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27FDDFFD2A2D5AD400DA5B06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27FDE0002A2D5AD400DA5B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27FDE0022A2D5AD400DA5B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FDE0082A2D5BD600DA5B06 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +40,7 @@
 		27FDDFE82A2D5ACA00DA5B06 = {
 			isa = PBXGroup;
 			children = (
+				27FDE0082A2D5BD600DA5B06 /* .gitignore */,
 				27FDDFF32A2D5ACA00DA5B06 /* ChatOpenIA */,
 				27FDDFF22A2D5ACA00DA5B06 /* Products */,
 			);
@@ -59,7 +60,6 @@
 				27FDDFF42A2D5ACA00DA5B06 /* AppDelegate.swift */,
 				27FDDFF62A2D5ACA00DA5B06 /* SceneDelegate.swift */,
 				27FDDFF82A2D5ACA00DA5B06 /* ViewController.swift */,
-				27FDDFFA2A2D5ACA00DA5B06 /* Main.storyboard */,
 				27FDDFFD2A2D5AD400DA5B06 /* Assets.xcassets */,
 				27FDDFFF2A2D5AD400DA5B06 /* LaunchScreen.storyboard */,
 				27FDE0022A2D5AD400DA5B06 /* Info.plist */,
@@ -126,8 +126,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27FDE0012A2D5AD400DA5B06 /* LaunchScreen.storyboard in Resources */,
+				27FDE0092A2D5BD600DA5B06 /* .gitignore in Resources */,
 				27FDDFFE2A2D5AD400DA5B06 /* Assets.xcassets in Resources */,
-				27FDDFFC2A2D5ACA00DA5B06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		27FDDFFA2A2D5ACA00DA5B06 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27FDDFFB2A2D5ACA00DA5B06 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		27FDDFFF2A2D5AD400DA5B06 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,13 +279,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatOpenIA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +293,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rolvr.ChatOpenIA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,13 +309,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatOpenIA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +323,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rolvr.ChatOpenIA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
