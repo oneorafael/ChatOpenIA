@@ -30,6 +30,10 @@ class ViewController: UIViewController {
         inputTextField.translatesAutoresizingMaskIntoConstraints = false
         inputTextField.placeholder = "Faça a sua pergunta"
         inputTextField.returnKeyType = .done
+        inputTextField.layer.borderWidth = 0.5
+        inputTextField.borderStyle = .roundedRect
+        inputTextField.layer.cornerRadius = 20
+        inputTextField.clipsToBounds = true
         return inputTextField
     }()
     
