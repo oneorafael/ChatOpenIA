@@ -29,7 +29,6 @@ class ViewController: UIViewController {
         let inputTextField = UITextField()
         inputTextField.translatesAutoresizingMaskIntoConstraints = false
         inputTextField.placeholder = "Faça a sua pergunta"
-        inputTextField.text = "Quem é Selena gomez"
         inputTextField.returnKeyType = .done
         return inputTextField
     }()
@@ -51,6 +50,7 @@ class ViewController: UIViewController {
         view.addSubview(scrollView)
         scrollView.addSubview(responseLabel)
         view.addSubview(inputTextField)
+        title = "OpenIA Chat"
     }
     
     private func setupConstraints() {
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
             scrollView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor),
             scrollView.bottomAnchor.constraint(equalTo: inputTextField.topAnchor),
             
-            responseLabel.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 16),
+            responseLabel.topAnchor.constraint(equalTo: scrollView.topAnchor),
             responseLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 16),
             responseLabel.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -16),
             responseLabel.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -16),
@@ -81,9 +81,10 @@ class ViewController: UIViewController {
 
 extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        responseLabel.text = ""
         progressIndicator.isHidden = false
         progressIndicator.startAnimating()
-        responseLabel.text = ""
+        self.responseLabel.text = "..."
         self.inputTextField.resignFirstResponder()
         if let text = textField.text, !text.isEmpty {
             connection.getResponse(input: text) { response in
